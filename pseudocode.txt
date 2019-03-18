@@ -23,3 +23,8 @@ losscount
 
 display directions text (each pic has a hidden variable, click to add and match the targetscore)
 generate and display target number
+
+$('#imageclass').on('click', function(){
+	function(){
+}
+})
