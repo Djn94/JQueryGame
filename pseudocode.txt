@@ -1,0 +1,25 @@
+display 4 images
+assign random values to images 1-12
+generate random target number 
+display target number (19-20)
+empty variable for currentscore
+on click of image, ads image.value to currentscore
+if currentscore<target score, 
+	continue accepting input,
+if currentscore===targetscore,
+	win count +1, 
+	initialize new variable function
+if currentscore> targetscore
+	lose count +1
+	initalize new variable function
+
+variables required so far:
+four empty value variables for random numbers for the images
+targetnumber
+currentscore
+wincount
+losscount
+
+
+display directions text (each pic has a hidden variable, click to add and match the targetscore)
+generate and display target number
