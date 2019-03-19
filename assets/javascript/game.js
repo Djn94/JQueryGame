@@ -2,20 +2,14 @@ let picValOne; //VARIABLES
 let picValTwo;
 let picValThree;
 let picValFour;
-let wincount;
-let losscount;
 let targetNum;
-let currentScore;
-
-//value assign function to the pictures
 
 $(function () { //THIS IS THE ON DOCUMENT FUNCTION
-    let currentScore = 0;
     let wincount = 0;
     let losscount = 0;
 
     function picAssign() { //ASSIGNS VALUES, INCLUDES ON BUTTON EVENTS TO ADD TO CURRENT SCORE
-        let currentScore = 0;
+
 
 
         function winloose() { //TO RUN ON EACH BUTTON CLICK TO CHECK FOR WIN/LOSS
@@ -43,6 +37,7 @@ $(function () { //THIS IS THE ON DOCUMENT FUNCTION
             }
 
         }
+        let currentScore = 0; //THIS IS THE ONLY PLACE I CAN FIND WHERE IT CAN FIND THE VARIABLE
         let picValOne = Math.floor((Math.random() * 12) + 1); //VALUE ASSIGNING
         $('#picone').val(picValOne);
         console.log(picValOne);
