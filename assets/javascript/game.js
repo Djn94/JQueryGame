@@ -5,17 +5,30 @@ let picValFour;
 let wincount;
 let losscount;
 let targetNum;
-let currentScore = 0;
+let currentScore;
 
 //value assign function to the pictures
 
 $(function () {
-
-    //ON DOCUMENT READY FUNCTION, BEGINS THE WHOLE GAME
-    function picAssign() { //THIS FUNCTION ASSIGNS RANDOM NUMBERS TO EVERY PICTURE and the target
+    function onWin() { //FUNCTION TO RUN ON WIN,
+        wincount++;
+        picAssign();
+    }
+    function onLoss() { //FUNCTION TO RUN ON LOSS
+        losscount++;
+        picAssign();
+    }
+    if (currentScore === targetNum) {  //WIN LOOSE CONDITIONALS
+        $('#currentScore').text('Your current score is:wiiin');
+    }
+    if (currentScore > targetNum) {
+        $('#currentScore').text('Your current score is:looose ');
+    }
+    function picAssign() { //ASSIGNS VALUES, INCLUDES ON BUTTON EVENTS TO ADD TO CURRENT SCORE
+        let currentScore = 0;
         let picValOne = Math.floor((Math.random() * 12) + 1);
         $('#picone').val(picValOne);
-        console.log($('#picone').val());
+        console.log(picValOne);
         let picValTwo = Math.floor((Math.random() * 12) + 1);
         console.log(picValTwo);
         $('#pictwo').val(picValTwo);
@@ -29,31 +42,30 @@ $(function () {
         console.log(targetNum);
         $('#targetNumber').text('Your current goal is: ' + targetNum);
         $('#currentScore').text('Your current score is: ' + currentScore);
+        $('#picone').on('click', function () {
+            currentScore += picValOne;
+            $('#currentScore').text('Your current score is: ' + currentScore);
+        })
+        $('#pictwo').on('click', function () {
+            currentScore += picValTwo;
+            $('#currentScore').text('Your current score is: ' + currentScore);
+        })
+        $('#picthree').on('click', function () {
+            currentScore += picValThree;
+            $('#currentScore').text('Your current score is: ' + currentScore);
+        })
+        $('#picfour').on('click', function () {
+            currentScore += picValFour;
+            $('#currentScore').text('Your current score is: ' + currentScore);
+            console.log(currentScore);
+            console.log(targetNum);
+        })
+
     }
-    picAssign(); //Assigns everything
+
+    picAssign(); //RUNS FUNCTION
+
+
 
 });
-function toAdd() {
-    $('#picone').on('click', function () {
-        scoreAdd();
-    })
-    $('#pictwo').on('click', function () {
-        scoreAdd();
-    })
-    $('#picthree').on('click', function () {
-        scoreAdd();
-    })
-    $('#picfour').on('click', function () {
-        scoreAdd();
-    })
 
-}
-
-function onWin() { //FUNCTION TO RUN ON WIN,
-    wincount++;
-    picAssign();
-}
-function onLoss() { //FUNCTION TO RUN ON LOSS
-    losscount++;
-    picAssign();
-}
