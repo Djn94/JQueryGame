@@ -7,23 +7,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NumbergaMe</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="Stylesheet" type="text/css" href="./assets/css/style.css">
+
+
 </head>
 
 <body>
-    <p id=directionstext>each pic has a hidden variable,
-        click to add and match the targetscore</p>
+    <h1>Each picture has a randomly assigned number. Please try to achieve the target score.</h1>
+    <div class=container>
+        <div class=row>
+            <div class=col-md-3>
+                <img src="./assets/images/janayara-machado-461788-unsplash.jpg" alt="Machado Pic" id=picone
+                    height="400px">
+            </div>
+            <div class=col-md-4></div>
+            <div class=col-md-3>
+                <img src="./assets/images/nature-3262715_640.jpg" alt="Octo2 Pic" id=pictwo height="400px">
+            </div>
+        </div>
+        <div class=row id=maintext>
+            <div class=col-md-7>
+                <p id=targetNumber>target number: </p>
+                <p id=currentScore>current score: </p>
 
-    <p id=wins>wins: </p>
-    <p id=losses>losses: </p>
-    <p id=targetNumber>target number: </p>
-    <p id=currentScore>current score: </p>
-    <img src="./assets/images/janayara-machado-461788-unsplash.jpg" alt="Machado Pic" id=picone height="400px">
-    <img src="./assets/images/nature-3262715_640.jpg" alt="Octo2 Pic" id=pictwo height="400px">
-    <img src="./assets/images/squid-225423_640.jpg" alt="Really a Squid" id=picthree height="400px">
-    <img src="./assets/images/vlad-tchompalov-446909-unsplash.jpg" alt="Vlad Pic" id=picfour height="400px">
-
-
-    <script src="./assets/javascript/game.js"></script>
+            </div>
+            <div class=col-md-5>
+                <p id=wins>wins: </p>
+                <p id=losses>losses: </p>
+            </div>
+        </div>
+        <div class=row>
+            <div class=col-md-3>
+                <img src="./assets/images/squid-225423_640.jpg" alt="Really a Squid" id=picthree height="400px">
+            </div>
+            <div class=col-md-4></div>
+            <div class=col-md-3>
+                <img src="./assets/images/vlad-tchompalov-446909-unsplash.jpg" alt="Vlad Pic" id=picfour height="400px">
+            </div>
+        </div>
+        <script src="./assets/javascript/game.js"></script>
+    </div>
 </body>
 
 </html>
