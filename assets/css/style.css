@@ -2,7 +2,7 @@ body{
     background-image: url("../images/marek-okon-1398447-unsplash.jpg");
 }
 p{
-    font-size: 3rem;
+    font-size: 2rem;
     color: black;
 }
 #picone{
@@ -24,7 +24,7 @@ h1{
     background-color: black;
     justify-content: center;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 4rem;
     color: aqua;
     font-family: sans-serif;
