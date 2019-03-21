@@ -46,22 +46,26 @@ $(document).ready(function () {
 });
 
 $('#picone').on('click', function () {  //ADDS VALUES TO CURRNET SCORES ON CLICK,
+    $('audio#bub')[0].play();
     currentScore += picValOne;      //RUNS WINLOOSE FUNCTION
     $('#currentScore').text('Your current score is: ' + currentScore); //ADDS TO SCORE TEXT
     winloose();
 })
 $('#pictwo').on('click', function () {
+    $('audio#bub')[1].play();
     currentScore += picValTwo;
     $('#currentScore').text('Your current score is: ' + currentScore);
     winloose();
 
 })
 $('#picthree').on('click', function () {
+    $('audio#bub')[1].play();
     currentScore += picValThree;
     $('#currentScore').text('Your current score is: ' + currentScore);
     winloose();
 })
 $('#picfour').on('click', function () {
+    $('audio#bub')[0].play();
     currentScore += picValFour;
     $('#currentScore').text('Your current score is: ' + currentScore);
     winloose();
