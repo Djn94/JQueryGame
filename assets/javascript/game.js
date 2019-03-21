@@ -66,32 +66,3 @@ $('#picfour').on('click', function () {
     $('#currentScore').text('Your current score is: ' + currentScore);
     winloose();
 })
-// $(function () { //THIS IS THE ON DOCUMENT FUNCTION
-//     picAssign();
-
-
-
-//     $('#picone').on('click', function () {  //ADDS VALUES TO CURRNET SCORES ON CLICK,
-//         currentScore += picValOne;      //RUNS WINLOOSE FUNCTION
-//         $('#currentScore').text('Your current score is: ' + currentScore); //ADDS TO SCORE TEXT
-//         winloose();
-
-//         $('#pictwo').on('click', function () {
-//             currentScore += picValTwo;
-//             $('#currentScore').text('Your current score is: ' + currentScore);
-//             winloose();
-
-//         })
-//         $('#picthree').on('click', function () {
-//             currentScore += picValThree;
-//             $('#currentScore').text('Your current score is: ' + currentScore);
-//             winloose();
-//         })
-//         $('#picfour').on('click', function () {
-//             currentScore += picValFour;
-//             $('#currentScore').text('Your current score is: ' + currentScore);
-//             winloose();
-//         })
-
-//     });
-// })
